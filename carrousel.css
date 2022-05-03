@@ -17,7 +17,7 @@
 }
 .Containers img {
 	width: 300px; /* width of container */
-	height: 1200px; /* height of container */
+	height: calc(100vw / 2); /* height of container */
 	object-fit: cover;
 	object-position: 50% 50%;
 }
