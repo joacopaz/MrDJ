@@ -12,6 +12,8 @@
 /* Make the images invisible by default */
 .Containers {
 	display: none;
+	max-width: 100%;
+	height: auto;
 }
 .Containers img {
 	width: 300px; /* width of container */
@@ -21,6 +23,15 @@
 }
 .firstImage {
 	display: contents;
+}
+@media screen and (max-width: 1000px) {
+	.slideshow-container {
+		max-width: 100vw;
+		height: auto;
+	}
+	.Containers img {
+		height: calc(100vw / 1.2);
+	}
 }
 /* forward & Back buttons */
 .Back,
