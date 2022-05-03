@@ -1,0 +1,14 @@
+#mediaServices {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 1rem;
+}
+#mediaServices img {
+	max-width: 100%;
+	height: auto;
+}
+.sponsors {
+	display: flex;
+	flex-wrap: wrap;
+}
