@@ -45,6 +45,12 @@
 		<h1>Conocénos</h1>
 		<p style="padding-top: 0">
 			<strong>Formulario Web</strong> <i>(respondemos en el día)</i>
+		<p class="success" style="color: green; font-weight: bold; text-align: center; display: none">Tu formulario se
+			ha enviado
+			exitosamente! Te
+			contactaremos en las
+			próximas 24 horas
+			hábiles.</p>
 		<form onsubmit="e=>e.preventDefault()">
 			<div class="input_group">
 				<label for="nombre">Nombre</label>
@@ -62,8 +68,9 @@
 				<textarea name="consulta" resize="false" id="consulta"
 					placeholder="Información del evento, por favor aclarar en lo posible cantidad de gente, espacio y requisitos especiales"
 					required></textarea>
-				<button style="margin-top: 2rem">Enviar</button>
+				<button style="margin: 2rem auto">Enviar</button>
 		</form>
+
 		<p style="padding-bottom: 0"><strong>Correo: <a
 					href="mailto:musicrevolutiondj@gmail.com">musicrevolutiondj@gmail.com</a></strong></p>
 		</p>
