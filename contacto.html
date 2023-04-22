@@ -43,12 +43,29 @@
 	</header>
 	<main class="conocenos">
 		<h1>Conocénos</h1>
-		<p>
+		<p style="padding-top: 0">
 			<strong>Formulario Web</strong> <i>(respondemos en el día)</i>
-			<form onsubmit="">
+		<form onsubmit="e=>e.preventDefault()">
+			<div class="input_group">
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre" placeholder="Juan Perez" id="nombre" required>
+			</div>
 
-			</form>
-		<p><strong>Correo: <a href="mailto:musicrevolutiondj@gmail.com">musicrevolutiondj@gmail.com</a></strong></p>
+			<div class="input_group">
+				<label for="contactinfo">Email/Teléfono</label>
+				<input id="contactinfo" type="text" name="contactinfo" placeholder="tumail@gmail.com / +54 XX XXXX XXXX"
+					required>
+			</div>
+
+			<div class="input_group">
+				<label for="consulta">Consulta</label>
+				<textarea name="consulta" resize="false" id="consulta"
+					placeholder="Información del evento, por favor aclarar en lo posible cantidad de gente, espacio y requisitos especiales"
+					required></textarea>
+				<button style="margin-top: 2rem">Enviar</button>
+		</form>
+		<p style="padding-bottom: 0"><strong>Correo: <a
+					href="mailto:musicrevolutiondj@gmail.com">musicrevolutiondj@gmail.com</a></strong></p>
 		</p>
 	</main>
 	<footer>
