@@ -95,6 +95,7 @@ nav ul {
 	gap: 5px;
 	overflow: hidden;
 	transition: height 500ms;
+	justify-content: center;
 }
 
 @media screen and (max-width: 700px) {
