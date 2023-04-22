@@ -5,7 +5,7 @@ const toggleMenu = (e) => {
 		navList.style.height = "";
 		return menuBtn.classList.remove("active");
 	}
-	navList.style.height = "200px";
+	navList.style.height = "230px";
 	menuBtn.classList.add("active");
 };
 
