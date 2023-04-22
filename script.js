@@ -5,7 +5,7 @@ const toggleMenu = (e) => {
 		navList.style.height = "";
 		return menuBtn.classList.remove("active");
 	}
-	navList.style.height = "150px";
+	navList.style.height = "200px";
 	menuBtn.classList.add("active");
 };
 
@@ -19,10 +19,12 @@ if (submitBtn) {
 		const contactForm = document.querySelector("form");
 		let data = new FormData(contactForm);
 		try {
+			submitBtn.disabled = true;
 			await fetch("https://formbold.com/s/6QrvL", {
 				method: "POST",
 				body: data,
 			});
+			await new Promise((r) => setTimeout(r, 2000));
 			alert(
 				"Tu información se ha enviado! Te contactaremos en las próximas 24 horas. Gracias por confiar en MrDJ!"
 			);
